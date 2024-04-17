@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Form.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style></style>
+
+    <title>Login-Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="left-side">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/img_1.jpg" />
+              </div>
+              <div class="text">
+                <h2>welcome Page</h2>
+                <p>
+                  A front-end developer is a software developer who specializes
+                  in creating and designing the user interface (UI) and user
+                  experience (UX) of websites and web applications
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./images/img_2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/img_3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/img_4.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-Side">
+          <div class="heading">
+            <h1 class="Form_Label">Login Form</h1>
+          </div>
+          <form
+            id="form"
+            class="Login_form"
+            action="./Home.html"
+            method="post"
+            name="form"
+            onsubmit="return Validation()"
+          >
+            <div class="username">UserName</div>
+            <div class="InputWrapper">
+              <input
+                autocomplete="off"
+                id="username"
+                class="input"
+                type="text"
+                name="username"
+              />
+              <div id="user_error">please enter your username</div>
+            </div>
+            <div class="password">Password</div>
+            <div class="InputWrapper">
+              <input
+                class="input"
+                id="password"
+                type="password"
+                name="password"
+              />
+              <div id="pass_error">please enter your username</div>
+            </div>
+            <button type="submit">submit</button>
+          </form>
+          <div class="section-second">
+            <p>Don't have an account? <a href="#">signup now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    swiper js link
+    <script src="./Form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <script src="./Form.js">
+     
+    </script>
+  </body>
+</html>
